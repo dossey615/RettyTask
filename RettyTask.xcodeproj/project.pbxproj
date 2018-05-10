@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E39E057620A4041A00C2488A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39E057520A4041A00C2488A /* AppDelegate.swift */; };
+		E39E057820A4041A00C2488A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39E057720A4041A00C2488A /* ViewController.swift */; };
+		E39E057B20A4041A00C2488A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39E057920A4041A00C2488A /* Main.storyboard */; };
+		E39E057D20A4041B00C2488A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E39E057C20A4041B00C2488A /* Assets.xcassets */; };
+		E39E058020A4041B00C2488A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39E057E20A4041B00C2488A /* LaunchScreen.storyboard */; };
+		E39E058B20A4041B00C2488A /* RettyTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39E058A20A4041B00C2488A /* RettyTaskTests.swift */; };
+		E39E059620A4041B00C2488A /* RettyTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39E059520A4041B00C2488A /* RettyTaskUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E39E058720A4041B00C2488A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E39E056A20A4041A00C2488A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E39E057120A4041A00C2488A;
+			remoteInfo = RettyTask;
+		};
+		E39E059220A4041B00C2488A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E39E056A20A4041A00C2488A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E39E057120A4041A00C2488A;
+			remoteInfo = RettyTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E39E057220A4041A00C2488A /* RettyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RettyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E39E057520A4041A00C2488A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E39E057720A4041A00C2488A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E39E057A20A4041A00C2488A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E39E057C20A4041B00C2488A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E39E057F20A4041B00C2488A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E39E058120A4041B00C2488A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E39E058620A4041B00C2488A /* RettyTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RettyTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E39E058A20A4041B00C2488A /* RettyTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RettyTaskTests.swift; sourceTree = "<group>"; };
+		E39E058C20A4041B00C2488A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E39E059120A4041B00C2488A /* RettyTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RettyTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E39E059520A4041B00C2488A /* RettyTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RettyTaskUITests.swift; sourceTree = "<group>"; };
+		E39E059720A4041B00C2488A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E39E056F20A4041A00C2488A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39E058320A4041B00C2488A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39E058E20A4041B00C2488A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E39E056920A4041A00C2488A = {
+			isa = PBXGroup;
+			children = (
+				E39E057420A4041A00C2488A /* RettyTask */,
+				E39E058920A4041B00C2488A /* RettyTaskTests */,
+				E39E059420A4041B00C2488A /* RettyTaskUITests */,
+				E39E057320A4041A00C2488A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E39E057320A4041A00C2488A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E39E057220A4041A00C2488A /* RettyTask.app */,
+				E39E058620A4041B00C2488A /* RettyTaskTests.xctest */,
+				E39E059120A4041B00C2488A /* RettyTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E39E057420A4041A00C2488A /* RettyTask */ = {
+			isa = PBXGroup;
+			children = (
+				E39E057520A4041A00C2488A /* AppDelegate.swift */,
+				E39E057720A4041A00C2488A /* ViewController.swift */,
+				E39E057920A4041A00C2488A /* Main.storyboard */,
+				E39E057C20A4041B00C2488A /* Assets.xcassets */,
+				E39E057E20A4041B00C2488A /* LaunchScreen.storyboard */,
+				E39E058120A4041B00C2488A /* Info.plist */,
+			);
+			path = RettyTask;
+			sourceTree = "<group>";
+		};
+		E39E058920A4041B00C2488A /* RettyTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				E39E058A20A4041B00C2488A /* RettyTaskTests.swift */,
+				E39E058C20A4041B00C2488A /* Info.plist */,
+			);
+			path = RettyTaskTests;
+			sourceTree = "<group>";
+		};
+		E39E059420A4041B00C2488A /* RettyTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E39E059520A4041B00C2488A /* RettyTaskUITests.swift */,
+				E39E059720A4041B00C2488A /* Info.plist */,
+			);
+			path = RettyTaskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E39E057120A4041A00C2488A /* RettyTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E39E059A20A4041B00C2488A /* Build configuration list for PBXNativeTarget "RettyTask" */;
+			buildPhases = (
+				E39E056E20A4041A00C2488A /* Sources */,
+				E39E056F20A4041A00C2488A /* Frameworks */,
+				E39E057020A4041A00C2488A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RettyTask;
+			productName = RettyTask;
+			productReference = E39E057220A4041A00C2488A /* RettyTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E39E058520A4041B00C2488A /* RettyTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E39E059D20A4041B00C2488A /* Build configuration list for PBXNativeTarget "RettyTaskTests" */;
+			buildPhases = (
+				E39E058220A4041B00C2488A /* Sources */,
+				E39E058320A4041B00C2488A /* Frameworks */,
+				E39E058420A4041B00C2488A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E39E058820A4041B00C2488A /* PBXTargetDependency */,
+			);
+			name = RettyTaskTests;
+			productName = RettyTaskTests;
+			productReference = E39E058620A4041B00C2488A /* RettyTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E39E059020A4041B00C2488A /* RettyTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E39E05A020A4041B00C2488A /* Build configuration list for PBXNativeTarget "RettyTaskUITests" */;
+			buildPhases = (
+				E39E058D20A4041B00C2488A /* Sources */,
+				E39E058E20A4041B00C2488A /* Frameworks */,
+				E39E058F20A4041B00C2488A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E39E059320A4041B00C2488A /* PBXTargetDependency */,
+			);
+			name = RettyTaskUITests;
+			productName = RettyTaskUITests;
+			productReference = E39E059120A4041B00C2488A /* RettyTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E39E056A20A4041A00C2488A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "土居将史";
+				TargetAttributes = {
+					E39E057120A4041A00C2488A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					E39E058520A4041B00C2488A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = E39E057120A4041A00C2488A;
+					};
+					E39E059020A4041B00C2488A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = E39E057120A4041A00C2488A;
+					};
+				};
+			};
+			buildConfigurationList = E39E056D20A4041A00C2488A /* Build configuration list for PBXProject "RettyTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E39E056920A4041A00C2488A;
+			productRefGroup = E39E057320A4041A00C2488A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E39E057120A4041A00C2488A /* RettyTask */,
+				E39E058520A4041B00C2488A /* RettyTaskTests */,
+				E39E059020A4041B00C2488A /* RettyTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E39E057020A4041A00C2488A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39E058020A4041B00C2488A /* LaunchScreen.storyboard in Resources */,
+				E39E057D20A4041B00C2488A /* Assets.xcassets in Resources */,
+				E39E057B20A4041A00C2488A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39E058420A4041B00C2488A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39E058F20A4041B00C2488A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E39E056E20A4041A00C2488A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39E057820A4041A00C2488A /* ViewController.swift in Sources */,
+				E39E057620A4041A00C2488A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39E058220A4041B00C2488A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39E058B20A4041B00C2488A /* RettyTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39E058D20A4041B00C2488A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39E059620A4041B00C2488A /* RettyTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E39E058820A4041B00C2488A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E39E057120A4041A00C2488A /* RettyTask */;
+			targetProxy = E39E058720A4041B00C2488A /* PBXContainerItemProxy */;
+		};
+		E39E059320A4041B00C2488A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E39E057120A4041A00C2488A /* RettyTask */;
+			targetProxy = E39E059220A4041B00C2488A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E39E057920A4041A00C2488A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E39E057A20A4041A00C2488A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E39E057E20A4041B00C2488A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E39E057F20A4041B00C2488A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E39E059820A4041B00C2488A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E39E059920A4041B00C2488A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E39E059B20A4041B00C2488A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KDV5SVN7RH;
+				INFOPLIST_FILE = RettyTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E39E059C20A4041B00C2488A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KDV5SVN7RH;
+				INFOPLIST_FILE = RettyTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E39E059E20A4041B00C2488A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KDV5SVN7RH;
+				INFOPLIST_FILE = RettyTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RettyTask.app/RettyTask";
+			};
+			name = Debug;
+		};
+		E39E059F20A4041B00C2488A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KDV5SVN7RH;
+				INFOPLIST_FILE = RettyTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RettyTask.app/RettyTask";
+			};
+			name = Release;
+		};
+		E39E05A120A4041B00C2488A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KDV5SVN7RH;
+				INFOPLIST_FILE = RettyTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RettyTask;
+			};
+			name = Debug;
+		};
+		E39E05A220A4041B00C2488A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KDV5SVN7RH;
+				INFOPLIST_FILE = RettyTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RettyTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E39E056D20A4041A00C2488A /* Build configuration list for PBXProject "RettyTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E39E059820A4041B00C2488A /* Debug */,
+				E39E059920A4041B00C2488A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E39E059A20A4041B00C2488A /* Build configuration list for PBXNativeTarget "RettyTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E39E059B20A4041B00C2488A /* Debug */,
+				E39E059C20A4041B00C2488A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E39E059D20A4041B00C2488A /* Build configuration list for PBXNativeTarget "RettyTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E39E059E20A4041B00C2488A /* Debug */,
+				E39E059F20A4041B00C2488A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E39E05A020A4041B00C2488A /* Build configuration list for PBXNativeTarget "RettyTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E39E05A120A4041B00C2488A /* Debug */,
+				E39E05A220A4041B00C2488A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E39E056A20A4041A00C2488A /* Project object */;
+}
