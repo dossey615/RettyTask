@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58FC3A935E7DA6FB72D5B1D7 /* Pods_RettyTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878137A5132AEE4C910AD9A8 /* Pods_RettyTaskTests.framework */; };
+		6E3794ED33FD1ABDF21AF786 /* Pods_RettyTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467E136CA326F1E09A74794F /* Pods_RettyTaskUITests.framework */; };
+		E39D0B7E20A415D500FE8A3B /* TwitterAPISystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D0B7D20A415D500FE8A3B /* TwitterAPISystem.swift */; };
+		E39D0B8020A4284B00FE8A3B /* TwittrTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D0B7F20A4284B00FE8A3B /* TwittrTableViewCell.swift */; };
 		E39E057620A4041A00C2488A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39E057520A4041A00C2488A /* AppDelegate.swift */; };
 		E39E057820A4041A00C2488A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39E057720A4041A00C2488A /* ViewController.swift */; };
 		E39E057B20A4041A00C2488A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39E057920A4041A00C2488A /* Main.storyboard */; };
@@ -14,6 +18,7 @@
 		E39E058020A4041B00C2488A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39E057E20A4041B00C2488A /* LaunchScreen.storyboard */; };
 		E39E058B20A4041B00C2488A /* RettyTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39E058A20A4041B00C2488A /* RettyTaskTests.swift */; };
 		E39E059620A4041B00C2488A /* RettyTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39E059520A4041B00C2488A /* RettyTaskUITests.swift */; };
+		FA82E2C74B32071FE99F2762 /* Pods_RettyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FFF5FBD7FF82CC9EBD65EC /* Pods_RettyTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		467E136CA326F1E09A74794F /* Pods_RettyTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RettyTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47B1C7106C2EC142DC57E4A4 /* Pods-RettyTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RettyTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RettyTask/Pods-RettyTask.debug.xcconfig"; sourceTree = "<group>"; };
+		5C480A62691521764C0CC6AB /* Pods-RettyTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RettyTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-RettyTask/Pods-RettyTask.release.xcconfig"; sourceTree = "<group>"; };
+		878137A5132AEE4C910AD9A8 /* Pods_RettyTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RettyTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95FFF5FBD7FF82CC9EBD65EC /* Pods_RettyTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RettyTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDC208CB8497A06B9D68DF1D /* Pods-RettyTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RettyTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RettyTaskUITests/Pods-RettyTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C14CCCF06C825DCE6B23EFBC /* Pods-RettyTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RettyTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RettyTaskUITests/Pods-RettyTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C819961C9DB2FA6F68FE24E4 /* Pods-RettyTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RettyTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RettyTaskTests/Pods-RettyTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E39D0B7D20A415D500FE8A3B /* TwitterAPISystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPISystem.swift; sourceTree = "<group>"; };
+		E39D0B7F20A4284B00FE8A3B /* TwittrTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwittrTableViewCell.swift; sourceTree = "<group>"; };
 		E39E057220A4041A00C2488A /* RettyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RettyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39E057520A4041A00C2488A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E39E057720A4041A00C2488A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +62,7 @@
 		E39E059120A4041B00C2488A /* RettyTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RettyTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39E059520A4041B00C2488A /* RettyTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RettyTaskUITests.swift; sourceTree = "<group>"; };
 		E39E059720A4041B00C2488A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E72ED7DDFBC250F8EF9FDA8E /* Pods-RettyTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RettyTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RettyTaskTests/Pods-RettyTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA82E2C74B32071FE99F2762 /* Pods_RettyTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58FC3A935E7DA6FB72D5B1D7 /* Pods_RettyTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +86,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3794ED33FD1ABDF21AF786 /* Pods_RettyTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83DE990CFB8D39EFAE5D93BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47B1C7106C2EC142DC57E4A4 /* Pods-RettyTask.debug.xcconfig */,
+				5C480A62691521764C0CC6AB /* Pods-RettyTask.release.xcconfig */,
+				C819961C9DB2FA6F68FE24E4 /* Pods-RettyTaskTests.debug.xcconfig */,
+				E72ED7DDFBC250F8EF9FDA8E /* Pods-RettyTaskTests.release.xcconfig */,
+				C14CCCF06C825DCE6B23EFBC /* Pods-RettyTaskUITests.debug.xcconfig */,
+				BDC208CB8497A06B9D68DF1D /* Pods-RettyTaskUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E39E056920A4041A00C2488A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +113,8 @@
 				E39E058920A4041B00C2488A /* RettyTaskTests */,
 				E39E059420A4041B00C2488A /* RettyTaskUITests */,
 				E39E057320A4041A00C2488A /* Products */,
+				83DE990CFB8D39EFAE5D93BC /* Pods */,
+				FD1894C8825507239157EBD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +133,8 @@
 			children = (
 				E39E057520A4041A00C2488A /* AppDelegate.swift */,
 				E39E057720A4041A00C2488A /* ViewController.swift */,
+				E39D0B7D20A415D500FE8A3B /* TwitterAPISystem.swift */,
+				E39D0B7F20A4284B00FE8A3B /* TwittrTableViewCell.swift */,
 				E39E057920A4041A00C2488A /* Main.storyboard */,
 				E39E057C20A4041B00C2488A /* Assets.xcassets */,
 				E39E057E20A4041B00C2488A /* LaunchScreen.storyboard */,
@@ -125,6 +161,16 @@
 			path = RettyTaskUITests;
 			sourceTree = "<group>";
 		};
+		FD1894C8825507239157EBD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95FFF5FBD7FF82CC9EBD65EC /* Pods_RettyTask.framework */,
+				878137A5132AEE4C910AD9A8 /* Pods_RettyTaskTests.framework */,
+				467E136CA326F1E09A74794F /* Pods_RettyTaskUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E39E059A20A4041B00C2488A /* Build configuration list for PBXNativeTarget "RettyTask" */;
 			buildPhases = (
+				147B03C40F9B07C0B3BD2707 /* [CP] Check Pods Manifest.lock */,
 				E39E056E20A4041A00C2488A /* Sources */,
 				E39E056F20A4041A00C2488A /* Frameworks */,
 				E39E057020A4041A00C2488A /* Resources */,
+				C6505F987973EC9979614D3E /* [CP] Embed Pods Frameworks */,
+				1E48DAC5AF85C036B7639E2B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E39E059D20A4041B00C2488A /* Build configuration list for PBXNativeTarget "RettyTaskTests" */;
 			buildPhases = (
+				24F936C156FBA5B84E24DADF /* [CP] Check Pods Manifest.lock */,
 				E39E058220A4041B00C2488A /* Sources */,
 				E39E058320A4041B00C2488A /* Frameworks */,
 				E39E058420A4041B00C2488A /* Resources */,
@@ -167,6 +217,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E39E05A020A4041B00C2488A /* Build configuration list for PBXNativeTarget "RettyTaskUITests" */;
 			buildPhases = (
+				F3029E8DF6E819E373B689D1 /* [CP] Check Pods Manifest.lock */,
 				E39E058D20A4041B00C2488A /* Sources */,
 				E39E058E20A4041B00C2488A /* Frameworks */,
 				E39E058F20A4041B00C2488A /* Resources */,
@@ -251,11 +302,112 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		147B03C40F9B07C0B3BD2707 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RettyTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E48DAC5AF85C036B7639E2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RettyTask/Pods-RettyTask-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RettyTask/Pods-RettyTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24F936C156FBA5B84E24DADF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RettyTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6505F987973EC9979614D3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RettyTask/Pods-RettyTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RettyTask/Pods-RettyTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3029E8DF6E819E373B689D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RettyTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E39E056E20A4041A00C2488A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E39D0B7E20A415D500FE8A3B /* TwitterAPISystem.swift in Sources */,
+				E39D0B8020A4284B00FE8A3B /* TwittrTableViewCell.swift in Sources */,
 				E39E057820A4041A00C2488A /* ViewController.swift in Sources */,
 				E39E057620A4041A00C2488A /* AppDelegate.swift in Sources */,
 			);
@@ -428,15 +580,13 @@
 		};
 		E39E059B20A4041B00C2488A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47B1C7106C2EC142DC57E4A4 /* Pods-RettyTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDV5SVN7RH;
 				INFOPLIST_FILE = RettyTask/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -446,15 +596,13 @@
 		};
 		E39E059C20A4041B00C2488A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C480A62691521764C0CC6AB /* Pods-RettyTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDV5SVN7RH;
 				INFOPLIST_FILE = RettyTask/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -464,17 +612,14 @@
 		};
 		E39E059E20A4041B00C2488A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C819961C9DB2FA6F68FE24E4 /* Pods-RettyTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDV5SVN7RH;
 				INFOPLIST_FILE = RettyTaskTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -485,17 +630,14 @@
 		};
 		E39E059F20A4041B00C2488A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E72ED7DDFBC250F8EF9FDA8E /* Pods-RettyTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDV5SVN7RH;
 				INFOPLIST_FILE = RettyTaskTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -506,16 +648,13 @@
 		};
 		E39E05A120A4041B00C2488A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C14CCCF06C825DCE6B23EFBC /* Pods-RettyTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDV5SVN7RH;
 				INFOPLIST_FILE = RettyTaskUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTaskUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -526,16 +665,13 @@
 		};
 		E39E05A220A4041B00C2488A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDC208CB8497A06B9D68DF1D /* Pods-RettyTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDV5SVN7RH;
 				INFOPLIST_FILE = RettyTaskUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTaskUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
