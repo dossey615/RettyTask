@@ -51,7 +51,7 @@ class TwitterAPI: NSObject {
             }
             //connct成功時,tweetのjsondataをAPIにより取得
             do {
-                var info = [
+                _ = [
                     "profile_image_url":"",
                     "name":"",
                     "screen_name":"",
