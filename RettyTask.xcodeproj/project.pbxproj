@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		58FC3A935E7DA6FB72D5B1D7 /* Pods_RettyTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878137A5132AEE4C910AD9A8 /* Pods_RettyTaskTests.framework */; };
 		6E3794ED33FD1ABDF21AF786 /* Pods_RettyTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467E136CA326F1E09A74794F /* Pods_RettyTaskUITests.framework */; };
+		E36B6FC420A8337100C668A3 /* AccountInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36B6FC320A8337100C668A3 /* AccountInformation.swift */; };
 		E39D0B7E20A415D500FE8A3B /* TwitterAPISystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D0B7D20A415D500FE8A3B /* TwitterAPISystem.swift */; };
 		E39D0B8020A4284B00FE8A3B /* TwittrTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D0B7F20A4284B00FE8A3B /* TwittrTableViewCell.swift */; };
 		E39E057620A4041A00C2488A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39E057520A4041A00C2488A /* AppDelegate.swift */; };
@@ -47,6 +48,7 @@
 		BDC208CB8497A06B9D68DF1D /* Pods-RettyTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RettyTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RettyTaskUITests/Pods-RettyTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C14CCCF06C825DCE6B23EFBC /* Pods-RettyTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RettyTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RettyTaskUITests/Pods-RettyTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C819961C9DB2FA6F68FE24E4 /* Pods-RettyTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RettyTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RettyTaskTests/Pods-RettyTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E36B6FC320A8337100C668A3 /* AccountInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInformation.swift; sourceTree = "<group>"; };
 		E39D0B7D20A415D500FE8A3B /* TwitterAPISystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPISystem.swift; sourceTree = "<group>"; };
 		E39D0B7F20A4284B00FE8A3B /* TwittrTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwittrTableViewCell.swift; sourceTree = "<group>"; };
 		E39E057220A4041A00C2488A /* RettyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RettyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +137,7 @@
 				E39E057720A4041A00C2488A /* ViewController.swift */,
 				E39D0B7D20A415D500FE8A3B /* TwitterAPISystem.swift */,
 				E39D0B7F20A4284B00FE8A3B /* TwittrTableViewCell.swift */,
+				E36B6FC320A8337100C668A3 /* AccountInformation.swift */,
 				E39E057920A4041A00C2488A /* Main.storyboard */,
 				E39E057C20A4041B00C2488A /* Assets.xcassets */,
 				E39E057E20A4041B00C2488A /* LaunchScreen.storyboard */,
@@ -410,6 +413,7 @@
 				E39D0B8020A4284B00FE8A3B /* TwittrTableViewCell.swift in Sources */,
 				E39E057820A4041A00C2488A /* ViewController.swift in Sources */,
 				E39E057620A4041A00C2488A /* AppDelegate.swift in Sources */,
+				E36B6FC420A8337100C668A3 /* AccountInformation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +590,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDV5SVN7RH;
 				INFOPLIST_FILE = RettyTask/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -602,7 +609,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDV5SVN7RH;
 				INFOPLIST_FILE = RettyTask/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -619,7 +629,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDV5SVN7RH;
 				INFOPLIST_FILE = RettyTaskTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -637,7 +651,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDV5SVN7RH;
 				INFOPLIST_FILE = RettyTaskTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -654,7 +672,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDV5SVN7RH;
 				INFOPLIST_FILE = RettyTaskUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTaskUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -671,7 +693,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDV5SVN7RH;
 				INFOPLIST_FILE = RettyTaskUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.RettyTaskUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

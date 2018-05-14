@@ -13,6 +13,7 @@ import SwiftyJSON
 class TwitterAPI: NSObject {
     
     var APIsession: TWTRSession?
+    var tweets_instance = tweets()
     
     //Twetter機能を使うための認証メソッド
     func GetOuth(){
@@ -26,6 +27,7 @@ class TwitterAPI: NSObject {
             print("@\(session.userName)でログインしました")
             self.APIsession = session
             self.GetTimeline()
+             print(self.tweets_instance.name)
         }
     }
     
@@ -51,28 +53,25 @@ class TwitterAPI: NSObject {
             }
             //connct成功時,tweetのjsondataをAPIにより取得
             do {
-                _ = [
-                    "profile_image_url":"",
-                    "name":"",
-                    "screen_name":"",
-                    "text":""
-                ]
-                //var number:[[info]] = [[]]
                 var json = try JSON(data: data!)
+                print(json)
                 for i in (0..<json.count){
                 if json[i]["text"].string != nil{
-                    //number.append()
+                    self.tweets_instance.text.append(json[i]["text"].string!)
                 }
                 if json[i]["profile_image_url"].string != nil{
+                    self.tweets_instance.image_url.append(json[i]["profile_image_url"].string!)
                 }
                 if json[i]["screen_name"].string != nil{
+                    self.tweets_instance.scname.append(json[i]["screen_name"].string!)
                 }
                 if json[i]["name"].string != nil{
+                    self.tweets_instance.name.append(json[i]["name"].string!)
                 }
                 }
                 //設定した条件によりtweetを取得
-                let son = try JSONSerialization.jsonObject(with: data!, options: []) as! NSArray
-                print(son)
+//                let son = try JSONSerialization.jsonObject(with: data!, options: []) as! NSArray
+//                print(son)
                 
             } catch let jsonError as NSError {
                 print("json error: \(jsonError.localizedDescription)")
