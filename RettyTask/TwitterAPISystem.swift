@@ -27,7 +27,6 @@ class TwitterAPI: NSObject {
             print("@\(session.userName)でログインしました")
             self.APIsession = session
             self.GetTimeline()
-             print(self.tweets_instance.name)
         }
     }
     
@@ -59,14 +58,14 @@ class TwitterAPI: NSObject {
                 if json[i]["text"].string != nil{
                     self.tweets_instance.text.append(json[i]["text"].string!)
                 }
-                if json[i]["profile_image_url"].string != nil{
-                    self.tweets_instance.image_url.append(json[i]["profile_image_url"].string!)
+                if json[i]["user"]["profile_image_url"].string != nil{
+                    self.tweets_instance.image_url.append(json[i]["user"]["profile_image_url"].string!)
                 }
-                if json[i]["screen_name"].string != nil{
-                    self.tweets_instance.scname.append(json[i]["screen_name"].string!)
+                if json[i]["user"]["screen_name"].string != nil{
+                    self.tweets_instance.scname.append(json[i]["user"]["screen_name"].string!)
                 }
-                if json[i]["name"].string != nil{
-                    self.tweets_instance.name.append(json[i]["name"].string!)
+                if json[i]["user"]["name"].string != nil{
+                    self.tweets_instance.name.append(json[i]["user"]["name"].string!)
                 }
                 }
                 //設定した条件によりtweetを取得
