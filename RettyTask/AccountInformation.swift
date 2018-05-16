@@ -8,15 +8,32 @@
 
 import Foundation
 
-class tweets{
+//user情報を管理するクラス
+class AccountInformation{
     
-    var image_url: [String] = []
-    var name: [String] = []
-    var scname: [String] = []
-    var text: [String] = []
+    //userのプロフ画像
+    var image_url: String = ""
+    //userの名前
+    var name: String = ""
+    //userのid
+    var scname: String = ""
+    //userのツイート文
+    var text: String = ""
     
-    func getCount() -> Int{
-        return name.count
-    }
+//    func getImage() -> String{
+//        return image_url
+//    }
+//    
+//    func getName() -> String{
+//        return name
+//    }
+//    
+//    func getScname() -> String{
+//        return scname
+//    }
+//    
+//    func getText() -> String{
+//        return text
+//    }
     
 }

@@ -13,7 +13,7 @@
 		E39D0B7E20A415D500FE8A3B /* TwitterAPISystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D0B7D20A415D500FE8A3B /* TwitterAPISystem.swift */; };
 		E39D0B8020A4284B00FE8A3B /* TwittrTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D0B7F20A4284B00FE8A3B /* TwittrTableViewCell.swift */; };
 		E39E057620A4041A00C2488A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39E057520A4041A00C2488A /* AppDelegate.swift */; };
-		E39E057820A4041A00C2488A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39E057720A4041A00C2488A /* ViewController.swift */; };
+		E39E057820A4041A00C2488A /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39E057720A4041A00C2488A /* TimeLineViewController.swift */; };
 		E39E057B20A4041A00C2488A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39E057920A4041A00C2488A /* Main.storyboard */; };
 		E39E057D20A4041B00C2488A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E39E057C20A4041B00C2488A /* Assets.xcassets */; };
 		E39E058020A4041B00C2488A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39E057E20A4041B00C2488A /* LaunchScreen.storyboard */; };
@@ -53,7 +53,7 @@
 		E39D0B7F20A4284B00FE8A3B /* TwittrTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwittrTableViewCell.swift; sourceTree = "<group>"; };
 		E39E057220A4041A00C2488A /* RettyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RettyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39E057520A4041A00C2488A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E39E057720A4041A00C2488A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E39E057720A4041A00C2488A /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
 		E39E057A20A4041A00C2488A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E39E057C20A4041B00C2488A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E39E057F20A4041B00C2488A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				E39E057520A4041A00C2488A /* AppDelegate.swift */,
-				E39E057720A4041A00C2488A /* ViewController.swift */,
+				E39E057720A4041A00C2488A /* TimeLineViewController.swift */,
 				E39D0B7D20A415D500FE8A3B /* TwitterAPISystem.swift */,
 				E39D0B7F20A4284B00FE8A3B /* TwittrTableViewCell.swift */,
 				E36B6FC320A8337100C668A3 /* AccountInformation.swift */,
@@ -411,7 +411,7 @@
 			files = (
 				E39D0B7E20A415D500FE8A3B /* TwitterAPISystem.swift in Sources */,
 				E39D0B8020A4284B00FE8A3B /* TwittrTableViewCell.swift in Sources */,
-				E39E057820A4041A00C2488A /* ViewController.swift in Sources */,
+				E39E057820A4041A00C2488A /* TimeLineViewController.swift in Sources */,
 				E39E057620A4041A00C2488A /* AppDelegate.swift in Sources */,
 				E36B6FC420A8337100C668A3 /* AccountInformation.swift in Sources */,
 			);

@@ -13,7 +13,7 @@ import SwiftyJSON
 class TwitterAPI: NSObject {
     
     var APIsession: TWTRSession?
-    var tweets_instance = tweets()
+    var UserInfo:[AccountInformation] = []
     
     //Twetter機能を使うための認証メソッド
     func GetOuth(){
@@ -55,18 +55,18 @@ class TwitterAPI: NSObject {
                 var json = try JSON(data: data!)
                 print(json)
                 for i in (0..<json.count){
-                if json[i]["text"].string != nil{
-                    self.tweets_instance.text.append(json[i]["text"].string!)
-                }
                 if json[i]["user"]["profile_image_url"].string != nil{
-                    self.tweets_instance.image_url.append(json[i]["user"]["profile_image_url"].string!)
+                    self.UserInfo[i].image_url.append(json[i]["profile_image_url"].string!)
+                    }
+                if json[i]["user"]["name"].string != nil{
+                    self.UserInfo[i].name.append(json[i]["name"].string!)
                 }
                 if json[i]["user"]["screen_name"].string != nil{
-                    self.tweets_instance.scname.append(json[i]["user"]["screen_name"].string!)
-                }
-                if json[i]["user"]["name"].string != nil{
-                    self.tweets_instance.name.append(json[i]["user"]["name"].string!)
-                }
+                    self.UserInfo[i].scname.append(json[i]["screen_name"].string!)
+                    }
+                if json[i]["text"].string != nil{
+                    self.UserInfo[i].text.append(json[i]["text"].string!)
+                    }
                 }
                 //設定した条件によりtweetを取得
 //                let son = try JSONSerialization.jsonObject(with: data!, options: []) as! NSArray

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TimeLineViewController.swift
 //  RettyTask
 //
 //  Created by 土居将史 on 2018/05/10.
