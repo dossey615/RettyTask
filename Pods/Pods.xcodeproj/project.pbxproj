@@ -1,0 +1,958 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		082B3B71C8FE8405F01E331AA8E89275 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		0C775DC5694C29FC0D9C368AC3BF9291 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1E3A30251F035BF13B0225FF8C0C793C /* Pods-RettyTask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA70A883C0FCABE9BE6F0C24A86C0B /* Pods-RettyTask-dummy.m */; };
+		51C29C05F226D5192D03CAADB5AA1F85 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D025A014C92ABC65FE4445EFFD2CE8 /* SwiftyJSON.swift */; };
+		6A560EAFC0A72E38F583980559B52E24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7447967EBF840C7C695DBD5F08ABBB57 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C8BEF001E543219B30861408E483920 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E251B05CBC2833AC8B7CE76C117A6AC /* Pods-RettyTaskTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC64D5EBAE0AC915466BCCFD5CA66D08 /* Pods-RettyTaskTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9AB1A0FC86AD2DEB2D42E944EA852B9 /* Pods-RettyTaskUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0E581A71627376A7A943089C7230DA /* Pods-RettyTaskUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B30C32232EB070065F7F6E3F7F7CA725 /* Pods-RettyTaskUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B402897FD73D34CA900D7CAFD08C954 /* Pods-RettyTaskUITests-dummy.m */; };
+		B43CD6F263A90E2755C2A079545EAC7C /* Pods-RettyTask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA01C9DCFA3A98FB150A24D7A4E58FEF /* Pods-RettyTask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6505EB7706AEF353CCF467062FF9A0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B88A4FA1C6CA2B4DE78B00B10EFAA4A4 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5428FF6147E13C3B48C8904D5E908 /* SwiftyJSON-dummy.m */; };
+		D46AF871FFFD0E920EB5C3D95A0D10EC /* Pods-RettyTaskTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6AE0A6708BB5B4F296011AE82518AA /* Pods-RettyTaskTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FFA6A94479F16318C1A479B6986E81F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8959B31B4AF6D617D5A0A0B4B53E72D3;
+			remoteInfo = SwiftyJSON;
+		};
+		EDBBE9340DF1F3376101E545C69F455D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90D0CB852949E308095A5803816D7DED;
+			remoteInfo = "Pods-RettyTask";
+		};
+		FDE635CBC5EAF121232E26EDD9594467 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90D0CB852949E308095A5803816D7DED;
+			remoteInfo = "Pods-RettyTask";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		160657F2D1514E7727FFE0F875F86F3D /* Pods-RettyTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RettyTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A1CF8D17F7D0149068A5F969230D607 /* Pods_RettyTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RettyTaskTests.framework; path = "Pods-RettyTaskTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BFA70A883C0FCABE9BE6F0C24A86C0B /* Pods-RettyTask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RettyTask-dummy.m"; sourceTree = "<group>"; };
+		20947FB0A1263994BFFE9105D3E6D61E /* Pods-RettyTaskUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RettyTaskUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		243EA2A3540F4EF3535571B4EA2394D0 /* Pods-RettyTask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RettyTask.modulemap"; sourceTree = "<group>"; };
+		355FC5DE6B62B47B1C85428D2DEF6A79 /* Pods-RettyTask-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RettyTask-frameworks.sh"; sourceTree = "<group>"; };
+		358C5F076CA09AC98875309EC0CA2A1D /* Pods_RettyTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RettyTaskUITests.framework; path = "Pods-RettyTaskUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA2FDD8258C1DD23F6E536DF2C289F3 /* Pods-RettyTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RettyTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4921694BF266DE3636D620A3AE6B1938 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A39314D7C92A2C7D716B9BD96F3DCF3 /* Pods-RettyTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RettyTask.release.xcconfig"; sourceTree = "<group>"; };
+		4F6AE0A6708BB5B4F296011AE82518AA /* Pods-RettyTaskTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RettyTaskTests-dummy.m"; sourceTree = "<group>"; };
+		5651F650896CC60FEA2E8E6373568D0C /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		58B4ACFA3BBC1AD7E165E520C46BF0C0 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		5AF27E79F852B7FD0B1C6F60B35A3E65 /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterShareExtensionUIResources.bundle; path = iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
+		5C8BEF001E543219B30861408E483920 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		5D6BE6CC8AE16B7C3B0619223899BDFF /* Pods_RettyTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RettyTask.framework; path = "Pods-RettyTask.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D863558EF7940C62AFD5657E0DF6E69 /* Pods-RettyTask-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RettyTask-resources.sh"; sourceTree = "<group>"; };
+		5E0E581A71627376A7A943089C7230DA /* Pods-RettyTaskUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RettyTaskUITests-umbrella.h"; sourceTree = "<group>"; };
+		63DBA0852C3A33EE4593846635991E2E /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67118EEA5C3B30C8859954264BA26C40 /* Pods-RettyTaskUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RettyTaskUITests-resources.sh"; sourceTree = "<group>"; };
+		6C96152C1824E98F08B4C2ED5D20C8FC /* Pods-RettyTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RettyTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		712AA6DEF94CCB374ACEDCAE56F25EF2 /* Pods-RettyTaskTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RettyTaskTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		71D025A014C92ABC65FE4445EFFD2CE8 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		7B402897FD73D34CA900D7CAFD08C954 /* Pods-RettyTaskUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RettyTaskUITests-dummy.m"; sourceTree = "<group>"; };
+		7DF5428FF6147E13C3B48C8904D5E908 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		80E79DB74ED4C9C35D6F01FEFAE116AF /* Pods-RettyTask-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RettyTask-acknowledgements.plist"; sourceTree = "<group>"; };
+		828C4DDDD579728D809095D102689ABD /* Pods-RettyTaskTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RettyTaskTests-resources.sh"; sourceTree = "<group>"; };
+		85CB50012837570E469C29B82D768D04 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CD4A81C1623B4338D650FE664DA196D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E62972186EDB83247F926C2C27B3E7E /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		A23AF1EF8E4B4C2FD76259261BBB69DB /* Pods-RettyTaskTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RettyTaskTests.modulemap"; sourceTree = "<group>"; };
+		A49FADB4DF876A4FD18C562247C9A9B2 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = iOS/TwitterCore.framework; sourceTree = "<group>"; };
+		A6E4CDA513AFF99F7B251A0B6727D98E /* Pods-RettyTaskTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RettyTaskTests-frameworks.sh"; sourceTree = "<group>"; };
+		ACDE396B7C93044CF182477494745D77 /* Pods-RettyTaskUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RettyTaskUITests.modulemap"; sourceTree = "<group>"; };
+		BA01C9DCFA3A98FB150A24D7A4E58FEF /* Pods-RettyTask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RettyTask-umbrella.h"; sourceTree = "<group>"; };
+		BE394D08E3874DC2F678958B8FDC34AF /* Pods-RettyTaskUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RettyTaskUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CC64D5EBAE0AC915466BCCFD5CA66D08 /* Pods-RettyTaskTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RettyTaskTests-umbrella.h"; sourceTree = "<group>"; };
+		D435C7DB9FE9A5A2FEA42D078586D831 /* Pods-RettyTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RettyTask.debug.xcconfig"; sourceTree = "<group>"; };
+		D5D209CAA37775F7B2246F63C2AB9B01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E21BD7C5B93D1DBA860D0F879B972908 /* Pods-RettyTask-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RettyTask-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EF002344E546BBD5570A0AED56BC2937 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50F8A2932D7993C6B2832F9BB3B9966 /* Pods-RettyTaskUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RettyTaskUITests-frameworks.sh"; sourceTree = "<group>"; };
+		F70EBF57DF90D6E94847E272CB700305 /* Pods-RettyTaskTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RettyTaskTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F7F42DF188B8B4BC2DBC3050B5F2608C /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9703EC653083678086503B201906B35 /* Pods-RettyTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RettyTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B7AAA1F2A233CE40C776D11B74041D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A560EAFC0A72E38F583980559B52E24 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D7BE60A8E2FF8CD2A4B6A3D6D7F609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C775DC5694C29FC0D9C368AC3BF9291 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0EC2169BA68ACE74817B2FEADAE5D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6505EB7706AEF353CCF467062FF9A0B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C025D93A0C5C5D041EAC4205941D7EEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082B3B71C8FE8405F01E331AA8E89275 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34B4F465AE8EE40C760AA836F204916B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				85CB50012837570E469C29B82D768D04 /* TwitterKitResources.bundle */,
+				5AF27E79F852B7FD0B1C6F60B35A3E65 /* TwitterShareExtensionUIResources.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4C90500BBD0394F1C2E4A4B5AF3FDD0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF488393CEBEB7E72FB1FFC4E9967A77 /* SwiftyJSON */,
+				D17D90B645CCFC607B65FF99447FADDB /* TwitterCore */,
+				68C1A867055B0A572E123D4B0D5E3352 /* TwitterKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		68C1A867055B0A572E123D4B0D5E3352 /* TwitterKit */ = {
+			isa = PBXGroup;
+			children = (
+				799BC1A858FF20F3FBB7C8AA2C54073B /* Frameworks */,
+				34B4F465AE8EE40C760AA836F204916B /* Resources */,
+			);
+			name = TwitterKit;
+			path = TwitterKit;
+			sourceTree = "<group>";
+		};
+		799BC1A858FF20F3FBB7C8AA2C54073B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63DBA0852C3A33EE4593846635991E2E /* TwitterKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				4C90500BBD0394F1C2E4A4B5AF3FDD0E /* Pods */,
+				C1AB8B2D9238C3DC49B8E60A8F51A3FA /* Products */,
+				89FBB9AAEA9BB600C1E379890A077BB4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		89FBB9AAEA9BB600C1E379890A077BB4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EC8AA0B18B5D32240D821BB765B3038 /* Pods-RettyTask */,
+				E9D6F815563CFB9499B8900CC74F0E6E /* Pods-RettyTaskTests */,
+				DDCD7C39D1D33873A45DA50787A5E14D /* Pods-RettyTaskUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9EC8AA0B18B5D32240D821BB765B3038 /* Pods-RettyTask */ = {
+			isa = PBXGroup;
+			children = (
+				9CD4A81C1623B4338D650FE664DA196D /* Info.plist */,
+				243EA2A3540F4EF3535571B4EA2394D0 /* Pods-RettyTask.modulemap */,
+				E21BD7C5B93D1DBA860D0F879B972908 /* Pods-RettyTask-acknowledgements.markdown */,
+				80E79DB74ED4C9C35D6F01FEFAE116AF /* Pods-RettyTask-acknowledgements.plist */,
+				1BFA70A883C0FCABE9BE6F0C24A86C0B /* Pods-RettyTask-dummy.m */,
+				355FC5DE6B62B47B1C85428D2DEF6A79 /* Pods-RettyTask-frameworks.sh */,
+				5D863558EF7940C62AFD5657E0DF6E69 /* Pods-RettyTask-resources.sh */,
+				BA01C9DCFA3A98FB150A24D7A4E58FEF /* Pods-RettyTask-umbrella.h */,
+				D435C7DB9FE9A5A2FEA42D078586D831 /* Pods-RettyTask.debug.xcconfig */,
+				4A39314D7C92A2C7D716B9BD96F3DCF3 /* Pods-RettyTask.release.xcconfig */,
+			);
+			name = "Pods-RettyTask";
+			path = "Target Support Files/Pods-RettyTask";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1AB8B2D9238C3DC49B8E60A8F51A3FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D6BE6CC8AE16B7C3B0619223899BDFF /* Pods_RettyTask.framework */,
+				1A1CF8D17F7D0149068A5F969230D607 /* Pods_RettyTaskTests.framework */,
+				358C5F076CA09AC98875309EC0CA2A1D /* Pods_RettyTaskUITests.framework */,
+				F7F42DF188B8B4BC2DBC3050B5F2608C /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D17D90B645CCFC607B65FF99447FADDB /* TwitterCore */ = {
+			isa = PBXGroup;
+			children = (
+				F09145A7B44FFF7C9E8F4C908C8949D7 /* Frameworks */,
+			);
+			name = TwitterCore;
+			path = TwitterCore;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DDCD7C39D1D33873A45DA50787A5E14D /* Pods-RettyTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF002344E546BBD5570A0AED56BC2937 /* Info.plist */,
+				ACDE396B7C93044CF182477494745D77 /* Pods-RettyTaskUITests.modulemap */,
+				BE394D08E3874DC2F678958B8FDC34AF /* Pods-RettyTaskUITests-acknowledgements.markdown */,
+				20947FB0A1263994BFFE9105D3E6D61E /* Pods-RettyTaskUITests-acknowledgements.plist */,
+				7B402897FD73D34CA900D7CAFD08C954 /* Pods-RettyTaskUITests-dummy.m */,
+				F50F8A2932D7993C6B2832F9BB3B9966 /* Pods-RettyTaskUITests-frameworks.sh */,
+				67118EEA5C3B30C8859954264BA26C40 /* Pods-RettyTaskUITests-resources.sh */,
+				5E0E581A71627376A7A943089C7230DA /* Pods-RettyTaskUITests-umbrella.h */,
+				160657F2D1514E7727FFE0F875F86F3D /* Pods-RettyTaskUITests.debug.xcconfig */,
+				3AA2FDD8258C1DD23F6E536DF2C289F3 /* Pods-RettyTaskUITests.release.xcconfig */,
+			);
+			name = "Pods-RettyTaskUITests";
+			path = "Target Support Files/Pods-RettyTaskUITests";
+			sourceTree = "<group>";
+		};
+		E146DD3B80C2E988817784C16B5E9BC3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4921694BF266DE3636D620A3AE6B1938 /* Info.plist */,
+				9E62972186EDB83247F926C2C27B3E7E /* SwiftyJSON.modulemap */,
+				5651F650896CC60FEA2E8E6373568D0C /* SwiftyJSON.xcconfig */,
+				7DF5428FF6147E13C3B48C8904D5E908 /* SwiftyJSON-dummy.m */,
+				58B4ACFA3BBC1AD7E165E520C46BF0C0 /* SwiftyJSON-prefix.pch */,
+				5C8BEF001E543219B30861408E483920 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		E9D6F815563CFB9499B8900CC74F0E6E /* Pods-RettyTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5D209CAA37775F7B2246F63C2AB9B01 /* Info.plist */,
+				A23AF1EF8E4B4C2FD76259261BBB69DB /* Pods-RettyTaskTests.modulemap */,
+				712AA6DEF94CCB374ACEDCAE56F25EF2 /* Pods-RettyTaskTests-acknowledgements.markdown */,
+				F70EBF57DF90D6E94847E272CB700305 /* Pods-RettyTaskTests-acknowledgements.plist */,
+				4F6AE0A6708BB5B4F296011AE82518AA /* Pods-RettyTaskTests-dummy.m */,
+				A6E4CDA513AFF99F7B251A0B6727D98E /* Pods-RettyTaskTests-frameworks.sh */,
+				828C4DDDD579728D809095D102689ABD /* Pods-RettyTaskTests-resources.sh */,
+				CC64D5EBAE0AC915466BCCFD5CA66D08 /* Pods-RettyTaskTests-umbrella.h */,
+				F9703EC653083678086503B201906B35 /* Pods-RettyTaskTests.debug.xcconfig */,
+				6C96152C1824E98F08B4C2ED5D20C8FC /* Pods-RettyTaskTests.release.xcconfig */,
+			);
+			name = "Pods-RettyTaskTests";
+			path = "Target Support Files/Pods-RettyTaskTests";
+			sourceTree = "<group>";
+		};
+		F09145A7B44FFF7C9E8F4C908C8949D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A49FADB4DF876A4FD18C562247C9A9B2 /* TwitterCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF488393CEBEB7E72FB1FFC4E9967A77 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				71D025A014C92ABC65FE4445EFFD2CE8 /* SwiftyJSON.swift */,
+				E146DD3B80C2E988817784C16B5E9BC3 /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		005E0EE7D4EB9BF233DF685FE443748B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E251B05CBC2833AC8B7CE76C117A6AC /* Pods-RettyTaskTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DA0F995BFBAEEE0D34154B966EF90DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43CD6F263A90E2755C2A079545EAC7C /* Pods-RettyTask-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DBE7ACCFC10C2BE72FF761C48F0C6C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7447967EBF840C7C695DBD5F08ABBB57 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B047EBE30FC7975D880B4DBB5B5C92E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9AB1A0FC86AD2DEB2D42E944EA852B9 /* Pods-RettyTaskUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8959B31B4AF6D617D5A0A0B4B53E72D3 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B9B1CCECA312DAF262E8B61F80C89B9 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				F5895AE0D84B3207E80EAD0E1A9F4BAD /* Sources */,
+				1B7AAA1F2A233CE40C776D11B74041D7 /* Frameworks */,
+				7DBE7ACCFC10C2BE72FF761C48F0C6C7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = F7F42DF188B8B4BC2DBC3050B5F2608C /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		900ED92A5B08D4E89EA0957827E31F3C /* Pods-RettyTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5600B9D30FD46A60F1A34A2042F838 /* Build configuration list for PBXNativeTarget "Pods-RettyTaskTests" */;
+			buildPhases = (
+				3DD9E1D30577F1ED5B6C28555D8F4183 /* Sources */,
+				54D7BE60A8E2FF8CD2A4B6A3D6D7F609 /* Frameworks */,
+				005E0EE7D4EB9BF233DF685FE443748B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A09880A2D3AB386BD61F9AE5C765160 /* PBXTargetDependency */,
+			);
+			name = "Pods-RettyTaskTests";
+			productName = "Pods-RettyTaskTests";
+			productReference = 1A1CF8D17F7D0149068A5F969230D607 /* Pods_RettyTaskTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		90D0CB852949E308095A5803816D7DED /* Pods-RettyTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6DABE16624562370AFB083B4409F657 /* Build configuration list for PBXNativeTarget "Pods-RettyTask" */;
+			buildPhases = (
+				B9F48A29BBAF575412AEC72960624743 /* Sources */,
+				C025D93A0C5C5D041EAC4205941D7EEF /* Frameworks */,
+				7DA0F995BFBAEEE0D34154B966EF90DE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94EE5BBB7B09C51EFD58C01AA12DE677 /* PBXTargetDependency */,
+			);
+			name = "Pods-RettyTask";
+			productName = "Pods-RettyTask";
+			productReference = 5D6BE6CC8AE16B7C3B0619223899BDFF /* Pods_RettyTask.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E83064C6324B5E41CA973DA02A52BF7F /* Pods-RettyTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FABB9C1A0443F4DC41BA4CA82076E1A9 /* Build configuration list for PBXNativeTarget "Pods-RettyTaskUITests" */;
+			buildPhases = (
+				DD7A82EA65FA7F88564F15E5EE7B7B43 /* Sources */,
+				8F0EC2169BA68ACE74817B2FEADAE5D5 /* Frameworks */,
+				B047EBE30FC7975D880B4DBB5B5C92E7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56E2736B5DDAEF98E77959F8CE4FAEB6 /* PBXTargetDependency */,
+			);
+			name = "Pods-RettyTaskUITests";
+			productName = "Pods-RettyTaskUITests";
+			productReference = 358C5F076CA09AC98875309EC0CA2A1D /* Pods_RettyTaskUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C1AB8B2D9238C3DC49B8E60A8F51A3FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90D0CB852949E308095A5803816D7DED /* Pods-RettyTask */,
+				900ED92A5B08D4E89EA0957827E31F3C /* Pods-RettyTaskTests */,
+				E83064C6324B5E41CA973DA02A52BF7F /* Pods-RettyTaskUITests */,
+				8959B31B4AF6D617D5A0A0B4B53E72D3 /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DD9E1D30577F1ED5B6C28555D8F4183 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46AF871FFFD0E920EB5C3D95A0D10EC /* Pods-RettyTaskTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F48A29BBAF575412AEC72960624743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E3A30251F035BF13B0225FF8C0C793C /* Pods-RettyTask-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7A82EA65FA7F88564F15E5EE7B7B43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B30C32232EB070065F7F6E3F7F7CA725 /* Pods-RettyTaskUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5895AE0D84B3207E80EAD0E1A9F4BAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B88A4FA1C6CA2B4DE78B00B10EFAA4A4 /* SwiftyJSON-dummy.m in Sources */,
+				51C29C05F226D5192D03CAADB5AA1F85 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56E2736B5DDAEF98E77959F8CE4FAEB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RettyTask";
+			target = 90D0CB852949E308095A5803816D7DED /* Pods-RettyTask */;
+			targetProxy = FDE635CBC5EAF121232E26EDD9594467 /* PBXContainerItemProxy */;
+		};
+		94EE5BBB7B09C51EFD58C01AA12DE677 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 8959B31B4AF6D617D5A0A0B4B53E72D3 /* SwiftyJSON */;
+			targetProxy = 7FFA6A94479F16318C1A479B6986E81F /* PBXContainerItemProxy */;
+		};
+		9A09880A2D3AB386BD61F9AE5C765160 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RettyTask";
+			target = 90D0CB852949E308095A5803816D7DED /* Pods-RettyTask */;
+			targetProxy = EDBBE9340DF1F3376101E545C69F455D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		228A6CC61C6067654A37E1F8162B3233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9703EC653083678086503B201906B35 /* Pods-RettyTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RettyTaskTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RettyTaskTests/Pods-RettyTaskTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5CBCC4392A770E1003DBAE9C7699216A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 160657F2D1514E7727FFE0F875F86F3D /* Pods-RettyTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RettyTaskUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RettyTaskUITests/Pods-RettyTaskUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		67CAB3F8653E1F388FB7779B5EC91186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A39314D7C92A2C7D716B9BD96F3DCF3 /* Pods-RettyTask.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RettyTask/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RettyTask/Pods-RettyTask.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		703082A85162812D3B777E668767AD25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		88B4D99F3E20727D1ADB62384B81483B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D435C7DB9FE9A5A2FEA42D078586D831 /* Pods-RettyTask.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RettyTask/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RettyTask/Pods-RettyTask.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4E9D44315E6A3B18353D39BED14A8AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5651F650896CC60FEA2E8E6373568D0C /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D35C9A1C833996F02BEB82F9932E6FE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C96152C1824E98F08B4C2ED5D20C8FC /* Pods-RettyTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RettyTaskTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RettyTaskTests/Pods-RettyTaskTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DFF6B908508583E11E1D6B68DB1760F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5651F650896CC60FEA2E8E6373568D0C /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E700221F5EFD678CA25FC5C8C43A47F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA2FDD8258C1DD23F6E536DF2C289F3 /* Pods-RettyTaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RettyTaskUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RettyTaskUITests/Pods-RettyTaskUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */,
+				703082A85162812D3B777E668767AD25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B9B1CCECA312DAF262E8B61F80C89B9 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4E9D44315E6A3B18353D39BED14A8AB /* Debug */,
+				DFF6B908508583E11E1D6B68DB1760F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6DABE16624562370AFB083B4409F657 /* Build configuration list for PBXNativeTarget "Pods-RettyTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88B4D99F3E20727D1ADB62384B81483B /* Debug */,
+				67CAB3F8653E1F388FB7779B5EC91186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5600B9D30FD46A60F1A34A2042F838 /* Build configuration list for PBXNativeTarget "Pods-RettyTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				228A6CC61C6067654A37E1F8162B3233 /* Debug */,
+				D35C9A1C833996F02BEB82F9932E6FE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FABB9C1A0443F4DC41BA4CA82076E1A9 /* Build configuration list for PBXNativeTarget "Pods-RettyTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CBCC4392A770E1003DBAE9C7699216A /* Debug */,
+				E700221F5EFD678CA25FC5C8C43A47F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
