@@ -6,6 +6,7 @@ target 'RettyTask' do
   use_frameworks!
   pod 'TwitterKit'
   pod "SwiftyJSON", ">= 2.2"
+  pod 'AlamofireImage'
 
   # Pods for RettyTask
 

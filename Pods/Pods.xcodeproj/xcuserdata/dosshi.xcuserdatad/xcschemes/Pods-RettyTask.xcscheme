@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "90D0CB852949E308095A5803816D7DED"
+               BlueprintIdentifier = "F1CEDC1CFF40FD7954BB93E887C4FBE3"
                BuildableName = "Pods_RettyTask.framework"
                BlueprintName = "Pods-RettyTask"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "90D0CB852949E308095A5803816D7DED"
+            BlueprintIdentifier = "F1CEDC1CFF40FD7954BB93E887C4FBE3"
             BuildableName = "Pods_RettyTask.framework"
             BlueprintName = "Pods-RettyTask"
             ReferencedContainer = "container:Pods.xcodeproj">

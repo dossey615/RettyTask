@@ -20,20 +20,20 @@ class AccountInformation{
     //userのツイート文
     var text: String = ""
     
-//    func getImage() -> String{
-//        return image_url
+//    func setImage(result: String){
+//        image_url = result
 //    }
 //    
-//    func getName() -> String{
-//        return name
+//    func setName(result: String){
+//        name = result
 //    }
 //    
-//    func getScname() -> String{
-//        return scname
+//    func setScname(result: String){
+//        scname = result
 //    }
 //    
-//    func getText() -> String{
-//        return text
+//    func setText(result: String){
+//        text = result
 //    }
     
 }

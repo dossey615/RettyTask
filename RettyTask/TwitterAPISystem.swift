@@ -14,9 +14,10 @@ class TwitterAPI: NSObject {
     
     var APIsession: TWTRSession?
     var UserInfo:[AccountInformation] = []
+    var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
     //Twetter機能を使うための認証メソッド
-    func GetOuth(){
+    func GetOuth(table: UITableView){
         TWTRTwitter.sharedInstance().logIn { session, error in
             guard let session = session else {
                 if let error = error {
@@ -26,12 +27,12 @@ class TwitterAPI: NSObject {
             }
             print("@\(session.userName)でログインしました")
             self.APIsession = session
-            self.GetTimeline()
+            self.GetTimeline(table: table)
         }
     }
     
     //APIを叩き、設定されたアカウントからタイムラインを取得
-    func GetTimeline(){
+    func GetTimeline(table: UITableView){
         var clientError: NSError?
         let client = TWTRAPIClient.withCurrentUser()
         let URLEndpoint = "https://api.twitter.com/1.1/statuses/user_timeline.json"
@@ -53,28 +54,29 @@ class TwitterAPI: NSObject {
             //connct成功時,tweetのjsondataをAPIにより取得
             do {
                 var json = try JSON(data: data!)
-                print(json)
+            //取得した情報を配列に格納
                 for i in (0..<json.count){
-                if json[i]["user"]["profile_image_url"].string != nil{
-                    self.UserInfo[i].image_url.append(json[i]["profile_image_url"].string!)
+                    let getInfo = AccountInformation() //配列に格納するためのインスタンス生成
+                    if json[i]["user"]["profile_image_url"].string != nil{
+                        getInfo.image_url = json[i]["user"]["profile_image_url"].string!
+                        }
+                    if json[i]["user"]["name"].string != nil{
+                        getInfo.name = json[i]["user"]["name"].string!
                     }
-                if json[i]["user"]["name"].string != nil{
-                    self.UserInfo[i].name.append(json[i]["name"].string!)
+                    if json[i]["user"]["screen_name"].string != nil{
+                        getInfo.scname = json[i]["user"]["screen_name"].string!
+                        }
+                    if json[i]["text"].string != nil{
+                        getInfo.text = json[i]["text"].string!
+                        }
+                    self.UserInfo.append(getInfo)
+                    self.appDelegate.flag = 1
+                    table.reloadData()
                 }
-                if json[i]["user"]["screen_name"].string != nil{
-                    self.UserInfo[i].scname.append(json[i]["screen_name"].string!)
-                    }
-                if json[i]["text"].string != nil{
-                    self.UserInfo[i].text.append(json[i]["text"].string!)
-                    }
-                }
-                //設定した条件によりtweetを取得
-//                let son = try JSONSerialization.jsonObject(with: data!, options: []) as! NSArray
-//                print(son)
-                
             } catch let jsonError as NSError {
                 print("json error: \(jsonError.localizedDescription)")
             }
         }
     }
+    
 }

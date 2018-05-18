@@ -8,30 +8,45 @@
 
 import UIKit
 import TwitterKit
+import AlamofireImage
 
-class ViewController: UIViewController/*, UITableViewDataSource, UITableViewDelegate*/{
+class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
  
     @IBOutlet weak var tableView: UITableView!
+    var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
     var tweet: [String] = []
     let twitter_instance = TwitterAPI()
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        twitter_instance.GetOuth()
 //        tableView.delegate = self
 //        tableView.dataSource = self
+        twitter_instance.GetOuth(table: tableView)
     }
     
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-//        return 100
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cellName", for:indexPath) as UITableViewCell
-//        return cell
-//    }
-//    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        
+        
+        if appDelegate.flag == 1{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tweetCell", for:indexPath) as! TwitterTableViewCell
+        
+            let targetURL = URL(string: self.twitter_instance.UserInfo[indexPath.row].image_url)
+            cell.TwIcon.af_setImage(withURL: targetURL!)
+            cell.TwName.text = self.twitter_instance.UserInfo[indexPath.row].name
+            cell.TwId.text = self.twitter_instance.UserInfo[indexPath.row].scname
+            cell.TwText.text = self.twitter_instance.UserInfo[indexPath.row].text
+        
+        return cell
+        }else{
+            return UITableViewCell()
+        }
+    }
+    
 //    // cellがタップされたのを検知したときに実行する処理
 //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        print("セルがタップされたよ！")

@@ -8,7 +8,8 @@
 
 import UIKit
 
-class TwittrTableViewCell: UITableViewCell {
+class TwitterTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var TwIcon: UIImageView!
     @IBOutlet weak var TwName: UILabel!
     @IBOutlet weak var TwId: UILabel!
