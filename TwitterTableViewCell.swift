@@ -1,15 +1,14 @@
 //
 //  TwitterTableViewCell.swift
-//  RettyTask
+//  
 //
 //  Created by 土居将史 on 2018/05/18.
-//  Copyright © 2018年 土居将史. All rights reserved.
 //
 
 import UIKit
 
 class TwitterTableViewCell: UITableViewCell {
-    
+
     @IBOutlet weak var TwIcon: UIImageView!
     @IBOutlet weak var TwName: UILabel!
     @IBOutlet weak var TwScname: UILabel!
@@ -25,5 +24,5 @@ class TwitterTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }

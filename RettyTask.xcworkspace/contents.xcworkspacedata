@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TwitterTableViewCell.swift">
+   </FileRef>
+   <FileRef
       location = "group:RettyTask.xcodeproj">
    </FileRef>
    <FileRef

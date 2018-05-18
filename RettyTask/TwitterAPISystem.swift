@@ -17,7 +17,7 @@ class TwitterAPI: NSObject {
     var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
     //Twetter機能を使うための認証メソッド
-    func GetOuth(table: UITableView){
+    func GetOuth(){
         TWTRTwitter.sharedInstance().logIn { session, error in
             guard let session = session else {
                 if let error = error {
@@ -27,12 +27,12 @@ class TwitterAPI: NSObject {
             }
             print("@\(session.userName)でログインしました")
             self.APIsession = session
-            self.GetTimeline(table: table)
+            self.GetTimeline()
         }
     }
     
     //APIを叩き、設定されたアカウントからタイムラインを取得
-    func GetTimeline(table: UITableView){
+    func GetTimeline(){
         var clientError: NSError?
         let client = TWTRAPIClient.withCurrentUser()
         let URLEndpoint = "https://api.twitter.com/1.1/statuses/user_timeline.json"
@@ -71,7 +71,6 @@ class TwitterAPI: NSObject {
                         }
                     self.UserInfo.append(getInfo)
                     self.appDelegate.flag = 1
-                    table.reloadData()
                 }
             } catch let jsonError as NSError {
                 print("json error: \(jsonError.localizedDescription)")
