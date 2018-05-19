@@ -13,15 +13,21 @@ import AlamofireImage
 
 class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
  
+   
     @IBOutlet weak var tableView: UITableView!
-    var UserInfo:[AccountInformation] = []
-    var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    @IBOutlet weak var mytweet: UIButton!
     
-    var tweet: [String] = []
-    //let twitter_instance = TwitterAPI()
- 
+    var UserInfo:[AccountInformation] = [] //全tweet情報を含んだ配列
+    var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate //Appdelegateによる認証フラグ管理
+    
+    //tweetbuttonが押された時のメソッド
+    @IBAction func sendtweet(_ sender: Any) {
+        TWTRComposer().show(from: self) { _ in }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        mytweet.isEnabled = (appDelegate.flag == 1)//認証前にボタンを押せないように設定
         tableView.delegate = self
         tableView.dataSource = self
         self.GetOuth()
@@ -33,20 +39,26 @@ class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDa
         return 120.0
     }
     
+    //セルの数を指定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return self.UserInfo.count
     }
 
+    //セルの内容設定
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "TwitterTableViewCell") as! TwitterTableViewCell
+    //認証成功後のセル作成
         if appDelegate.flag == 1{
+        /*---- AlamofireImageによりURLから画像を取得 ----*/
             let targetURL = URL(string: self.UserInfo[indexPath.row].image_url)
-            print(self.UserInfo[indexPath.row].image_url)
             cell.TwIcon.af_setImage(withURL: targetURL!)
+        /*-------------------------------------------*/
+            //ツイッターの情報をそれぞれ代入
             cell.TwName.text = self.UserInfo[indexPath.row].name
             cell.TwScname.text = "@" + self.UserInfo[indexPath.row].scname
             cell.TwText.text = self.UserInfo[indexPath.row].text
         }else{
+            //起動時、ダミーデータを挿入し、セルの型を作っておく
             cell.TwIcon.image = UIImage(named: "NoImage")
             cell.TwName.text = "no data"
             cell.TwScname.text = "no data"
@@ -80,7 +92,7 @@ class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDa
         var clientError: NSError?
         let client = TWTRAPIClient.withCurrentUser()
         let URLEndpoint = "https://api.twitter.com/1.1/statuses/user_timeline.json"
-        let params = ["user_id":session.userID,"count": "2"]
+        let params = ["user_id":session.userID,"count": "100"]
         
         //requestの設定
         let request = client.urlRequest(
@@ -101,6 +113,7 @@ class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDa
                 //取得した情報を配列に格納
                 for i in (0..<json.count){
                     let getInfo = AccountInformation() //配列に格納するためのインスタンス生成
+                    //条件が一致した際、インスタンスに代入し、最終的にユーザー単位でUseInfo配列で管理
                     if json[i]["user"]["profile_image_url"].string != nil{
                         getInfo.image_url = json[i]["user"]["profile_image_url"].string!
                     }
@@ -116,8 +129,8 @@ class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDa
                     self.UserInfo.append(getInfo)
                 }
                 self.appDelegate.flag = 1
-                self.tableView.reloadData()
-                
+                self.tableView.reloadData() //テーブルデータの再読み込み
+                self.mytweet.isEnabled = (self.appDelegate.flag == 1) //tweetbuttonを押せるようにする
             } catch let jsonError as NSError {
                 print("json error: \(jsonError.localizedDescription)")
             }
