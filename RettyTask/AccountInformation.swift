@@ -19,21 +19,10 @@ class AccountInformation{
     var scname: String = ""
     //userのツイート文
     var text: String = ""
-    
-//    func setImage(result: String){
-//        image_url = result
-//    }
-//    
-//    func setName(result: String){
-//        name = result
-//    }
-//    
-//    func setScname(result: String){
-//        scname = result
-//    }
-//    
-//    func setText(result: String){
-//        text = result
-//    }
+    //いいねの数
+    var favorite_count: Int = 0
+    //リツイート数
+    var retweet_count: Int = 0
+
     
 }

@@ -16,10 +16,15 @@ class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDa
    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var mytweet: UIButton!
+
     
     var UserInfo:[AccountInformation] = [] //全tweet情報を含んだ配列
     var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate //Appdelegateによる認証フラグ管理
     
+    @IBAction func BtFavorite(_ sender: Any) {
+    }
+    @IBAction func BtRetweet(_ sender: Any) {
+    }
     //tweetbuttonが押された時のメソッド
     @IBAction func sendtweet(_ sender: Any) {
         TWTRComposer().show(from: self) { _ in }
@@ -57,12 +62,16 @@ class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDa
             cell.TwName.text = self.UserInfo[indexPath.row].name
             cell.TwScname.text = "@" + self.UserInfo[indexPath.row].scname
             cell.TwText.text = self.UserInfo[indexPath.row].text
+            cell.Twretweet.text = String(self.UserInfo[indexPath.row].retweet_count)
+            cell.Twfavorite.text = String(self.UserInfo[indexPath.row].favorite_count)
         }else{
             //起動時、ダミーデータを挿入し、セルの型を作っておく
             cell.TwIcon.image = UIImage(named: "NoImage")
             cell.TwName.text = "no data"
             cell.TwScname.text = "no data"
             cell.TwText.text = "no data"
+            cell.Twretweet.text = "0"
+            cell.Twfavorite.text = "0"
         }
                 return cell
     }
@@ -125,6 +134,12 @@ class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDa
                     }
                     if json[i]["text"].string != nil{
                         getInfo.text = json[i]["text"].string!
+                    }
+                    if json[i]["favorite_count"].int != nil{
+                        getInfo.favorite_count = json[i]["favorite_count"].int!
+                    }
+                    if json[i]["retweet_count"].int != nil{
+                        getInfo.retweet_count = json[i]["retweet_count"].int!
                     }
                     self.UserInfo.append(getInfo)
                 }

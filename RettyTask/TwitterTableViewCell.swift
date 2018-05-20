@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TwitterKit
 
 class TwitterTableViewCell: UITableViewCell {
     
@@ -14,7 +15,11 @@ class TwitterTableViewCell: UITableViewCell {
     @IBOutlet weak var TwName: UILabel!
     @IBOutlet weak var TwScname: UILabel!
     @IBOutlet weak var TwText: UILabel!
+    @IBOutlet weak var Twfavorite: UILabel!
+    @IBOutlet weak var Twretweet: UILabel!
     
+    @IBOutlet weak var Button_favorite: UIButton!
+    @IBOutlet weak var Button_Retweet: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
