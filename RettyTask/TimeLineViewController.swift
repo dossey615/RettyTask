@@ -25,6 +25,11 @@ class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDa
     }
     @IBAction func BtRetweet(_ sender: Any) {
     }
+    
+    
+    @IBAction func log_check(_ sender: Any) {
+        GetOuth()
+    }
     //tweetbuttonが押された時のメソッド
     @IBAction func sendtweet(_ sender: Any) {
         TWTRComposer().show(from: self) { _ in }
@@ -33,9 +38,17 @@ class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         mytweet.isEnabled = (appDelegate.flag == 1)//認証前にボタンを押せないように設定
+        // セルの高さの見積もり値
+        self.tableView.estimatedRowHeight = 50
+        // セルの制約を基に計算された高さを代入
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        print("viewdidload")
+        
         tableView.delegate = self
         tableView.dataSource = self
         self.GetOuth()
+        tableView.rowHeight = UITableViewAutomaticDimension
+
     }
     
     //セルの高さを指定
@@ -64,6 +77,7 @@ class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDa
             cell.TwText.text = self.UserInfo[indexPath.row].text
             cell.Twretweet.text = String(self.UserInfo[indexPath.row].retweet_count)
             cell.Twfavorite.text = String(self.UserInfo[indexPath.row].favorite_count)
+            cell.TwText.sizeToFit()
         }else{
             //起動時、ダミーデータを挿入し、セルの型を作っておく
             cell.TwIcon.image = UIImage(named: "NoImage")
@@ -78,7 +92,7 @@ class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDa
     
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 //        // UITableViewCellの高さを自動で取得する値
-//        tableView.estimatedRowHeight = 100 //セルの高さ
+//        tableView.estimatedRowHeight = 200 //セルの高さ
 //        return UITableViewAutomaticDimension //自動設定
 //    }
     
