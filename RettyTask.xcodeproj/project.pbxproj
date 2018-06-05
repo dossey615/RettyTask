@@ -10,7 +10,6 @@
 		58FC3A935E7DA6FB72D5B1D7 /* Pods_RettyTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878137A5132AEE4C910AD9A8 /* Pods_RettyTaskTests.framework */; };
 		6E3794ED33FD1ABDF21AF786 /* Pods_RettyTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467E136CA326F1E09A74794F /* Pods_RettyTaskUITests.framework */; };
 		E36B6FC420A8337100C668A3 /* AccountInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36B6FC320A8337100C668A3 /* AccountInformation.swift */; };
-		E37A79A420AE9BE000E75C4D /* TwitterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37A79A220AE9BE000E75C4D /* TwitterTableViewCell.swift */; };
 		E39E057620A4041A00C2488A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39E057520A4041A00C2488A /* AppDelegate.swift */; };
 		E39E057820A4041A00C2488A /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39E057720A4041A00C2488A /* TimeLineViewController.swift */; };
 		E39E057B20A4041A00C2488A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39E057920A4041A00C2488A /* Main.storyboard */; };
@@ -51,7 +50,6 @@
 		C14CCCF06C825DCE6B23EFBC /* Pods-RettyTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RettyTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RettyTaskUITests/Pods-RettyTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C819961C9DB2FA6F68FE24E4 /* Pods-RettyTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RettyTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RettyTaskTests/Pods-RettyTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E36B6FC320A8337100C668A3 /* AccountInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInformation.swift; sourceTree = "<group>"; };
-		E37A79A220AE9BE000E75C4D /* TwitterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterTableViewCell.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		E39E057220A4041A00C2488A /* RettyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RettyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39E057520A4041A00C2488A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E39E057720A4041A00C2488A /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				E39E057520A4041A00C2488A /* AppDelegate.swift */,
 				E39E057720A4041A00C2488A /* TimeLineViewController.swift */,
 				E36B6FC320A8337100C668A3 /* AccountInformation.swift */,
-				E37A79A220AE9BE000E75C4D /* TwitterTableViewCell.swift */,
 				E3FE081E20B3E1E7005C77B5 /* TweetTableViewCell.swift */,
 				E3FE081F20B3E1E7005C77B5 /* TweetTableViewCell.xib */,
 				E3FE081C20B3E041005C77B5 /* リツイート.pdf */,
@@ -425,7 +422,6 @@
 				E39E057620A4041A00C2488A /* AppDelegate.swift in Sources */,
 				E36B6FC420A8337100C668A3 /* AccountInformation.swift in Sources */,
 				E3FE082020B3E1E7005C77B5 /* TweetTableViewCell.swift in Sources */,
-				E37A79A420AE9BE000E75C4D /* TwitterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

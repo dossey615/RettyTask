@@ -21,10 +21,7 @@ class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDa
     var UserInfo:[AccountInformation] = [] //全tweet情報を含んだ配列
     var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate //Appdelegateによる認証フラグ管理
     
-    @IBAction func BtFavorite(_ sender: Any) {
-    }
-    @IBAction func BtRetweet(_ sender: Any) {
-    }
+
     
     
     @IBAction func log_check(_ sender: Any) {
@@ -37,25 +34,20 @@ class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //自作セルをテーブルビューに登録する。
+        let tweetXib = UINib(nibName:"TweetTableViewCell", bundle:nil)
+        tableView.register(tweetXib, forCellReuseIdentifier:"TweetCell")
         mytweet.isEnabled = (appDelegate.flag == 1)//認証前にボタンを押せないように設定
-        // セルの高さの見積もり値
-        self.tableView.estimatedRowHeight = 50
-        // セルの制約を基に計算された高さを代入
-        self.tableView.rowHeight = UITableViewAutomaticDimension
-        print("viewdidload")
-        
         tableView.delegate = self
         tableView.dataSource = self
         self.GetOuth()
-        tableView.rowHeight = UITableViewAutomaticDimension
-
     }
     
     //セルの高さを指定
-    func tableView(_ table: UITableView,
-                   heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120.0
-    }
+//    func tableView(_ table: UITableView,
+//                   heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 130.0
+//    }
     
     //セルの数を指定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
@@ -64,38 +56,39 @@ class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDa
 
     //セルの内容設定
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TwitterTableViewCell") as! TwitterTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TweetCell", for:indexPath) as! TweetTableViewCell
     //認証成功後のセル作成
         if appDelegate.flag == 1{
         /*---- AlamofireImageによりURLから画像を取得 ----*/
             let targetURL = URL(string: self.UserInfo[indexPath.row].image_url)
-            cell.TwIcon.af_setImage(withURL: targetURL!)
+            cell.UserImage.af_setImage(withURL: targetURL!)
         /*-------------------------------------------*/
             //ツイッターの情報をそれぞれ代入
-            cell.TwName.text = self.UserInfo[indexPath.row].name
-            cell.TwScname.text = "@" + self.UserInfo[indexPath.row].scname
-            cell.TwText.text = self.UserInfo[indexPath.row].text
-            cell.Twretweet.text = String(self.UserInfo[indexPath.row].retweet_count)
-            cell.Twfavorite.text = String(self.UserInfo[indexPath.row].favorite_count)
-            cell.TwText.sizeToFit()
+            cell.UserName.text = self.UserInfo[indexPath.row].name
+            cell.UserScreenName.text = "@" + self.UserInfo[indexPath.row].scname
+            cell.UserTweet.text = self.UserInfo[indexPath.row].text
+            cell.RetweetCount.text = String(self.UserInfo[indexPath.row].retweet_count)
+            cell.FavoriteCount.text = String(self.UserInfo[indexPath.row].favorite_count)
+            cell.UserTweet.sizeToFit()
         }else{
             //起動時、ダミーデータを挿入し、セルの型を作っておく
-            cell.TwIcon.image = UIImage(named: "NoImage")
-            cell.TwName.text = "no data"
-            cell.TwScname.text = "no data"
-            cell.TwText.text = "no data"
-            cell.Twretweet.text = "0"
-            cell.Twfavorite.text = "0"
+            cell.UserImage.image = UIImage(named: "NoImage")
+            cell.UserName.text = "no data"
+            cell.UserScreenName.text = "no data"
+            cell.UserTweet.text = "no data"
+            cell.RetweetCount.text = "0"
+            cell.FavoriteCount.text = "0"
         }
+        cell.layoutIfNeeded()
                 return cell
     }
     
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        // UITableViewCellの高さを自動で取得する値
-//        tableView.estimatedRowHeight = 200 //セルの高さ
-//        return UITableViewAutomaticDimension //自動設定
-//    }
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        // UITableViewCellの高さを自動で取得する値
+        tableView.estimatedRowHeight = 170 //セルの高さ
+        return UITableViewAutomaticDimension //自動設定
+    }
+
     //Twetter機能を使うための認証メソッド
     func GetOuth(){
         TWTRTwitter.sharedInstance().logIn { session, error in

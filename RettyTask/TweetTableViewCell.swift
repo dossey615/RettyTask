@@ -9,7 +9,15 @@
 import UIKit
 
 class TweetTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var UserImage: UIImageView!
+    @IBOutlet weak var UserName: UILabel!
+    @IBOutlet weak var UserScreenName: UILabel!
+    @IBOutlet weak var UserTweet: UILabel!
+    @IBOutlet weak var FavoriteButton: UIButton!
+    @IBOutlet weak var FavoriteCount: UILabel!
+    @IBOutlet weak var RetweetButton: UIButton!
+    @IBOutlet weak var RetweetCount: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
