@@ -88,6 +88,7 @@ class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDa
         tableView.estimatedRowHeight = 170 //セルの高さ
         return UITableViewAutomaticDimension //自動設定
     }
+    
 
     //Twetter機能を使うための認証メソッド
     func GetOuth(){
@@ -107,7 +108,7 @@ class TimeLineViewController: UIViewController,UITableViewDelegate,UITableViewDa
     func GetTimeline(session: TWTRSession){
         var clientError: NSError?
         let client = TWTRAPIClient.withCurrentUser()
-        let URLEndpoint = "https://api.twitter.com/1.1/statuses/user_timeline.json"
+        let URLEndpoint = "https://api.twitter.com/1.1/statuses/home_timeline.json"
         let params = ["user_id":session.userID,"count": "100"]
         
         //requestの設定
